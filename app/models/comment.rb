@@ -1,5 +1,5 @@
 class Comment < ActiveRecord::Base
-	validates_presence_of :author, :content, :post
+	validates_presence_of :comment_author, :content, :post
   validates_length_of :content, maximum: 140, message: "You have reached maximum character length of 140."
 
 	belongs_to :post,
